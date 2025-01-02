@@ -93,6 +93,9 @@ volumes:
     name: data-postgres
 networks:
   spring:
-    external: true
+    driver: bridge
+    name: spring # Nombre explícito de la red
+#    external: true
+
 
 
